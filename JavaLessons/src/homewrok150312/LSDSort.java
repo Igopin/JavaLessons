@@ -4,28 +4,28 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class LSDSort {
-	private static final int MAX = 1000000;
+    private static final int MAX = 1000000;
 
-	public static void main(String[] args) {
-	    int[] data = generate();
+    public static void main(String[] args) {
+        int[] data = generate();
 
-	    long start = System.currentTimeMillis();
-	    Arrays.sort(data);
-	    long stop = System.currentTimeMillis();
-	    
-	    System.out.println("Ellaspsed = " + (stop - start));
-	}
+        long start = System.currentTimeMillis();
+        Arrays.sort(data);
+        long stop = System.currentTimeMillis();
 
-	private static int[] generate() {
-	    int[] data = new int[MAX];
-	    
-	    Random random = new Random();
-	    
-	    for (int i = 0; i < data.length; i++) {
-	    	data[i] = random.nextInt(MAX);
-	    }
-		
-	    return data;
+        System.out.println("Ellaspsed = " + (stop - start));
+    }
+
+    private static int[] generate() {
+        int[] data = new int[MAX];
+
+        Random random = new Random();
+
+        for (int i = 0; i < data.length; i++) {
+            data[i] = random.nextInt(MAX);
+        }
+
+        return data;
     }
 
 }

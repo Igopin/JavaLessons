@@ -2,14 +2,14 @@ package lesson150317.pets;
 
 public class CageBeast extends Pet {
 
-	protected void cleanCage() {
-		System.out.println("Cleaning cage for bird");
-	}
+    protected void cleanCage() {
+        System.out.println("Cleaning cage for bird");
+    }
 
-	@Override
+    @Override
     public void feed() {
-    	cleanCage();
-    	super.feed();
+        cleanCage();
+        super.feed();
     }
 
 }

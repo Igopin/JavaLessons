@@ -4,59 +4,59 @@ import java.util.Iterator;
 
 public class LinkedList implements Iterable {
 
-	private static class Node {
-		Object item;
-		Node next;
-		
-		public Node(Object item, Node next) {
-		    super();
-		    this.item = item;
-		    this.next = next;
-	    }
-	}
-	
-	private static class ListIterator implements Iterator {
+    private static class Node {
+        Object item;
+        Node next;
 
-		private LinkedList _linkedList;
-		private Node tmp;
-		
-		public ListIterator(final LinkedList linkedList) {
-			_linkedList = linkedList;
-			tmp = _linkedList.first;
-	    }
+        public Node(Object item, Node next) {
+            super();
+            this.item = item;
+            this.next = next;
+        }
+    }
 
-		@Override
-		public boolean hasNext() {
-			return tmp != null;
-		}
+    private static class ListIterator implements Iterator {
 
-		@Override
-		public Object next() {
-			Object item = tmp.item;
-			tmp = tmp.next;
-			return item;
-		}
+        private LinkedList _linkedList;
+        private Node tmp;
 
-	}
+        public ListIterator(final LinkedList linkedList) {
+            _linkedList = linkedList;
+            tmp = _linkedList.first;
+        }
 
-	Node first, last;
-	
-	public void add(final Object item) {
-		
-		Node fresh = new Node(item, null);
-		
-		if (first == null) {
-			first = fresh;
-			last = fresh;
-		} else {
-			last.next = fresh;
-			last = fresh;
-		}
-	}
-	
-	@Override
+        @Override
+        public boolean hasNext() {
+            return tmp != null;
+        }
+
+        @Override
+        public Object next() {
+            Object item = tmp.item;
+            tmp = tmp.next;
+            return item;
+        }
+
+    }
+
+    Node first, last;
+
+    public void add(final Object item) {
+
+        Node fresh = new Node(item, null);
+
+        if (first == null) {
+            first = fresh;
+            last = fresh;
+        } else {
+            last.next = fresh;
+            last = fresh;
+        }
+    }
+
+    @Override
     public Iterator iterator() {
-		return new ListIterator(this);
-	}
+        return new ListIterator(this);
+    }
 
 }

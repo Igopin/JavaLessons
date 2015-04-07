@@ -2,25 +2,25 @@ package lesson150326.interfaces;
 
 public class Chair extends Furniture {
 
-	@Override
+    @Override
     public void move() {
-		System.out.println("moveing chair");
+        System.out.println("moveing chair");
     }
 
-	@Override
+    @Override
     public void clean() {
-		System.out.println("cleaning chair.");
+        System.out.println("cleaning chair.");
     }
 
-	@Override
+    @Override
     public void repair() {
-		System.out.println("repairing chair");
-	    
+        System.out.println("repairing chair");
+
     }
 
-	@Override
+    @Override
     public void paint() {
-		System.out.println("painting chair.");
+        System.out.println("painting chair.");
     }
 
 }

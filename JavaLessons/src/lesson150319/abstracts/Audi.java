@@ -2,11 +2,11 @@ package lesson150319.abstracts;
 
 public class Audi extends Car {
 
-	@Override
+    @Override
     public void moveTo(int x, int y) {
-    	turnOn();
-    	drive();
-    	shutDown();
+        turnOn();
+        drive();
+        shutDown();
     }
 
 }

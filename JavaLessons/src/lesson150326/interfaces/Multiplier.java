@@ -1,18 +1,18 @@
 package lesson150326.interfaces;
 
 public class Multiplier implements Changeable, Cleanable {
-	
-	int state;
-	
-	@Override
+
+    int state;
+
+    @Override
     public void change() {
-		state += 2;
+        state += 2;
     }
 
-	@Override
+    @Override
     public void clean() {
-		System.out.println("cleaning multiplier");
-		state = 0;
+        System.out.println("cleaning multiplier");
+        state = 0;
     }
 
 }

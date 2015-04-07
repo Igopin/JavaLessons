@@ -7,14 +7,14 @@ import java.util.stream.Stream;
 
 public class MyStack extends ArrayDeque {
 
-	@Override
-	public void addFirst(Object e) {
-		throw new UnsupportedOperationException();
-	}
-	
-	@Override
-	public Object removeFirst() {
-		throw new UnsupportedOperationException();
-	}
-	
+    @Override
+    public void addFirst(Object e) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public Object removeFirst() {
+        throw new UnsupportedOperationException();
+    }
+
 }

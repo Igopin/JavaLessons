@@ -2,9 +2,9 @@ package lesson150323.inheritance;
 
 public class BWWindow extends AWindow {
 
-	private static final int BLACK = 0;
+    private static final int BLACK = 0;
 
-	public BWWindow() {
-		setBackgroundColor(BLACK);
-	}
+    public BWWindow() {
+        setBackgroundColor(BLACK);
+    }
 }

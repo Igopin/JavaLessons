@@ -7,21 +7,21 @@ import javax.management.RuntimeErrorException;
 
 public class FinallyExamples {
 
-	public static void main(String[] args) {
-	    
-		Lock lock = new ReentrantLock(); // mutex
-		lock.lock();
-		try {
-			doSomething();
-		} finally {
-			lock.unlock();
-			System.out.println("unlocked!");
-		}
-		System.out.println("finish");
-		
+    public static void main(String[] args) {
+
+        Lock lock = new ReentrantLock(); // mutex
+        lock.lock();
+        try {
+            doSomething();
+        } finally {
+            lock.unlock();
+            System.out.println("unlocked!");
+        }
+        System.out.println("finish");
+
     }
 
-	private static void doSomething() {
- 	    throw new RuntimeException();
+    private static void doSomething() {
+        throw new RuntimeException();
     }
 }
