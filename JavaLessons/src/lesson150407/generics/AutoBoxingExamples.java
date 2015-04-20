@@ -1,8 +1,11 @@
 package lesson150407.generics;
 
+
+
 public class AutoBoxingExamples {
 
     public static void main(String[] args) {
+                
         int a = new Integer(10);
         int b = new Integer(10).intValue();
         Integer c = 20;
@@ -16,4 +19,5 @@ public class AutoBoxingExamples {
     static Integer calc2() {
         return 20;
     }
+    
 }

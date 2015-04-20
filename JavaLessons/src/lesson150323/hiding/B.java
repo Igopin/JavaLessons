@@ -12,9 +12,7 @@ public class B extends A {
     public static void main(String[] args) {
 
         B b = new B();
-
         System.out.println(b.getState());
-
         b.change(); // call local and changed local 'state', but getState get
                     // 'state' from A
 

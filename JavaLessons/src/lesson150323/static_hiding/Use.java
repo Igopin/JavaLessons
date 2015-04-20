@@ -11,7 +11,7 @@ public class Use {
         // A.getCount();
 
         B b = new B();
-        b.getCount();
+        B.getCount();
         // B.getCount();
 
     }

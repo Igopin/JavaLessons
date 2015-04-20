@@ -4,6 +4,10 @@ public class FComposition {
 
     F f;
 
+    static {
+      
+    }
+    
     public FComposition(final F f) {
         this.f = f;
     }
