@@ -1,6 +1,5 @@
 package lesson150331.linked_list.anonymous;
 
-import jdk.internal.org.objectweb.asm.tree.IntInsnNode;
 
 public abstract class D {
 
