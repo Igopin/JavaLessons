@@ -1,0 +1,36 @@
+package lesson150526.concurrency;
+
+import utils.Utils;
+
+public class SyncLog {
+    
+    static class Task implements Runnable {
+
+        @Override
+        synchronized public void run() {
+            System.out.println(Thread.currentThread().getName());
+            while (true) {
+                
+            }
+        }
+        
+    }
+    
+    
+    public static void main(String[] args) {
+        
+        Task task = new Task();
+        
+        System.out.println(task);
+        new Thread(task).start();
+        
+        Thread thread2 = new Thread(task, "hatiko");
+
+        thread2.start();
+        Utils.pause(1000);
+        
+        synchronized (task) {
+            task.notify();
+        }
+    }
+}
