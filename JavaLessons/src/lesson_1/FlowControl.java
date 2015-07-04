@@ -1,4 +1,4 @@
-package test_01;
+package lesson_1;
 
 public class FlowControl {
 
